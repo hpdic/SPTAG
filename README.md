@@ -16,6 +16,8 @@ cd Release
   -o sift1m_index \
   -a KDT \
   -t 32
+cd ~/SPTAG/hpdic/script
+python3 benchmark.py
 ```
 
 # SPTAG: A library for fast approximate nearest neighbor search
