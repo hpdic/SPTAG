@@ -18,6 +18,7 @@ cd Release
   -t 32
 cd ~/SPTAG/hpdic/script
 python3 benchmark.py
+# TODO: Limit memory via Cgroup (e.g., 200MB) to benchmark SPTAG degradation and argue AdaDisk's value.
 ```
 
 # SPTAG: A library for fast approximate nearest neighbor search
