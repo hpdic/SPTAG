@@ -462,3 +462,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+ThirdParty/isal-l_crypto
