@@ -7,8 +7,15 @@ cd build
 cmake ..
 make -j
 cd Release
-./client --help
-./SPTAGTest
+./indexbuilder --help
+./indexbuilder \
+  -d 128 \
+  -v Float \
+  -f XVEC \
+  -i /home/cc/AdaDisk/experiments/data/sift/sift_base.fvecs \
+  -o sift1m_index \
+  -a KDT \
+  -t 32
 ```
 
 # SPTAG: A library for fast approximate nearest neighbor search
