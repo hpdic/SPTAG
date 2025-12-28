@@ -1,3 +1,16 @@
+# HPDIC MOD
+```bash
+# We have removed the buggy Python binding from cmake
+cd ~/SPTAG
+mkdir build
+cd build
+cmake ..
+make -j
+cd Release
+./client --help
+./SPTAGTest
+```
+
 # SPTAG: A library for fast approximate nearest neighbor search
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/Microsoft/SPTAG/blob/master/LICENSE)
