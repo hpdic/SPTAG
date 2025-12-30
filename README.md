@@ -8,6 +8,8 @@ cmake ..
 make -j
 cd Release
 ./indexbuilder --help
+
+# In-memory indexing:
 ./indexbuilder \
   -d 128 \
   -v Float \
@@ -18,7 +20,16 @@ cd Release
   -t 32
 cd ~/SPTAG/hpdic/script
 python3 benchmark.py
-# TODO: Limit memory via Cgroup (e.g., 200MB) to benchmark SPTAG degradation and argue AdaDisk's value.
+
+# Disk indexing, still buggy
+./indexbuilder \
+  -a SPANN \
+  -d 128 \
+  -v Float \
+  -f XVEC \
+  -i /home/cc/AdaDisk/experiments/data/sift/sift_base.fvecs \
+  -o sift1m_spann_index \
+  -t 32
 ```
 
 # SPTAG: A library for fast approximate nearest neighbor search
